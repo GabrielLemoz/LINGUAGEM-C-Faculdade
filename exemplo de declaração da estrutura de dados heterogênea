@@ -1,0 +1,8 @@
+var Ficha_Funcionario: registro
+inicio
+	matricula: inteiro
+	nome: vetor[1..50] de caractere
+	Dt_Nascimento: vetor[1..9] de caractere
+	Cargo: vetor[1..30] de caractere
+	Salario: real
+fim
