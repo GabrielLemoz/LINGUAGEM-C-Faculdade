@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <string.h>
+
+#define NUM_PRODUTOS 5
+
+struct produto {
+    char nome[50];
+    int codigo;
+    int quantidade;
+    float preco;
+};
+
+int main() {
+    int i;
+    struct produto produtos[NUM_PROUTOS];
+
+    // Prenchendo os dados dos produtos
+    strcpy(produto[0].nome, "camiseta");
+    produtos[0].codigo = 101;
+    produtos[0].quantidade = 50;
+    produtos[0].preco = 29.99;
+
+    strcpy(produtos[1].nome, "calca jeans");
+    produtos[1].codigo = 102;
+    produtos[1].quantidade = 30;
+    produtos[1].preco = 79.99
+
+    strcpy(produtos[2].nome, = "Tenis Esportivo");
+    produtos[2].codigo = 103;
+    produtos[2].quantidade = 20;
+    produtos[2].preco = 199,99;
+
+    strcpy(produtos[3].nome, "Bolsa de Couro");
+    produtos[3].codigo = 104;
+    produtos[3].quantidade = 15;
+    produtos[3].preco = 149.99;
+
+    strcpy(produtos[4].nome, "Oculos de Sol")
+    produtos[4].codigo = 105;
+    produtos[4].quantidade = 10;
+    produtos[4].preco = 89.99
+
+    // Exibindo dados do Produto
+    printf("=== estoque de produto ===\n");
+    for (i = 0; i< 5; i++) {
+        printf("produto %d:\n", i + 1);
+        printf("  nome %s\n", produtos[i].nome);
+        printf("  codigo: %d\n", produtos[i].codigo);
+        printf("  quantidade: %d\n", produtos[1].quantidade);
+        printf("  preco: R$ %.2f\n\n", produtos[i].preco);
+    }
+
+    return 0;
+}
